@@ -16,13 +16,7 @@ class ScenarioTask(TaskSequence):
     def status(self):
         status(self)
 
-    @seq_task(2)
-    def item_list(self):
-        item_list(self)
 
-    @seq_task(2)
-    def add_item(self):
-        add_item(self)
 
 class WebsiteUser(HttpLocust):
     task_set = ScenarioTask
